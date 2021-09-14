@@ -1,0 +1,1 @@
+web gunicorn MachineMagic.wsgi:application --log-file -
