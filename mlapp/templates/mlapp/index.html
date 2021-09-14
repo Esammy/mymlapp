@@ -1,0 +1,50 @@
+{% extends "mlapp/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+  {% for feature in features %}
+    <div class="col-lg-4">
+      <a href="{{ feature.lnk }}">
+      <img class="img-thumbnail" src="{{ feature.ml_img.url }}">
+      <div class="box-element product">
+        <h6><strong>{{feature.name}}</strong></h6>
+        <p>{{feature.description}}</p>
+        <hr>
+        <button class="btn btn-outline-secondary add-btn">
+          <p class="justify-content-center">Make Predictions</p>
+        </button>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-lg-4">
+      <a href="{{ feature.lnk }}">
+      <img class="img-thumbnail" src="{{ feature.ml_img.url }}">
+      <div class="box-element product">
+        <h6><strong>{{feature.name}}</strong></h6>
+        <p>{{feature.description}}</p>
+        <hr>
+        <button class="btn btn-outline-secondary add-btn">
+          <p class="justify-content-center">Make Predictions</p>
+        </button>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-lg-4">
+      <a href="{{ feature.lnk }}">
+      <img class="img-thumbnail" src="{{ feature.ml_img.url }}">
+      <div class="box-element product">
+        <h6><strong>{{feature.name}}</strong></h6>
+        <p>{{feature.description}}</p>
+        <hr>
+        <button class="btn btn-outline-secondary add-btn">
+          <p class="justify-content-center">Make Predictions</p>
+        </button>
+      </div>
+    </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
