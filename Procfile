@@ -1,1 +1,2 @@
-web gunicorn MachineMagic.wsgi:application --log-file -
+release: python manage.py migrate
+web: gunicorn MachineMagic.wsgi --log-file=-
